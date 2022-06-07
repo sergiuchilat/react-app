@@ -1,21 +1,16 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { AppBar } from "@mui/material";
 import { Toolbar } from "@mui/material";
+import NavBar from './NavBar'
 
 const Layout = () => {
     return (
         <>
             <AppBar position="sticky">
                 <Toolbar variant="dense">
-                <nav>
-                    <Link color="primary" to="/">Home</Link>
-                    <Link to="/contact">Contact</Link>
-                </nav>
+                    <NavBar/>
                 </Toolbar>
-                
             </AppBar>
-
-
             <Outlet />
         </>
     )

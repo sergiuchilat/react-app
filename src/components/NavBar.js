@@ -1,8 +1,12 @@
-function render(){
+import { Link } from "react-router-dom";
+
+function render() {
     return (
-        <div>
-            <a href="home">Home</a>
-            <a href="contact">Contact</a>
-        </div>
+        <nav>
+            <Link color="primary" to="/">Home</Link>
+            <Link to="/contact">Contact</Link>
+        </nav>
     );
 }
+
+export default render;
