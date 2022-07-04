@@ -26,7 +26,7 @@ export default class Products extends React.Component {
         })
         try {
             const productsAPI = new ProductsAPI();
-            const response = productsAPI.getAllStatic();
+            const response = productsAPI.getAll();
             this.setState({
                 posts: response,
                 loadingException: !response || !response.data || !response.data.length

@@ -1,10 +1,6 @@
 import axios from 'axios';
 class ProductsAPI{
-    async getAll(){
-        return await axios.get("https://my-json-server.typicode.com/typicode/demo/posts");
-    }
-
-    getAllStatic(){
+    getAll(){
         return [
             {
               "id": 1,
@@ -19,6 +15,7 @@ class ProductsAPI{
               "title": "Post 3"
             }
           ];
+        //return await axios.get("https://my-json-server.typicode.com/typicode/demo/posts");
     }
 }
 export default ProductsAPI;
